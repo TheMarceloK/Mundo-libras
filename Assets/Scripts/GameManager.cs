@@ -1,6 +1,7 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections.Generic;
+using System;
 
 public class GameManager : MonoBehaviour
 {
@@ -15,7 +16,7 @@ public class GameManager : MonoBehaviour
         {
             instancia = this;
             DontDestroyOnLoad(gameObject);
-            CarregarFasesCSV(); // s� carrega 1x
+            CarregarFasesCSV();
         }
         else
         {
@@ -28,29 +29,97 @@ public class GameManager : MonoBehaviour
         TextAsset csvFile = Resources.Load<TextAsset>("fases");
         if (csvFile == null)
         {
-            Debug.LogError("Arquivo fases.csv n�o encontrado em Resources!");
+            Debug.LogError("❌ Arquivo 'fases.csv' não encontrado na pasta Resources!");
             return;
         }
 
-        string[] linhas = csvFile.text.Split('\n');
+        string texto = csvFile.text.Replace("\r", "");
+        string[] linhas = texto.Split('\n');
 
-        for (int i = 1; i < linhas.Length; i++) // come�a da linha 1 (cabe�alho � linha 0)
+        if (linhas.Length <= 1)
         {
-            if (string.IsNullOrWhiteSpace(linhas[i])) continue;
-
-            string[] colunas = linhas[i].Split(',');
-
-            Fase fase = new Fase();
-            fase.id = int.Parse(colunas[0].Trim());
-            fase.tipo = colunas[1].Trim();
-            fase.palavraDebug = colunas[2].Trim();
-            fase.imagem = colunas[3].Trim();
-            fase.video = colunas[4].Trim();
-
-            fases.Add(fase);
+            Debug.LogError("❌ O arquivo CSV parece estar vazio!");
+            return;
         }
 
-        Debug.Log($"Foram carregadas {fases.Count} fases do CSV.");
+        // Detectar separador observando o cabeçalho (mais confiável)
+        string headerLine = linhas[0];
+        char separador = headerLine.Contains(';') ? ';' : (headerLine.Contains(',') ? ',' : ';');
+
+        // Cabeçalho -> cria mapa de colunas (normalizado lowercase)
+        string[] cabecalho = headerLine.Split(separador);
+        var indices = new Dictionary<string, int>();
+        for (int i = 0; i < cabecalho.Length; i++)
+        {
+            string col = cabecalho[i].Trim().ToLower();
+            if (!indices.ContainsKey(col))
+                indices[col] = i;
+        }
+
+        fases.Clear();
+        int contador = 0;
+
+        for (int i = 1; i < linhas.Length; i++)
+        {
+            string linha = linhas[i];
+            if (string.IsNullOrWhiteSpace(linha)) continue;
+
+            // IMPORTANTE: limitar o split para 6 partes (id,tipo,palavraDebug,imagem,video,pares)
+            string[] colunas = linha.Split(new char[] { separador }, 6);
+
+            // Se a linha tiver menos colunas do que o header, preenche com strings vazias
+            if (colunas.Length < cabecalho.Length)
+            {
+                Array.Resize(ref colunas, cabecalho.Length);
+                for (int k = 0; k < colunas.Length; k++)
+                    colunas[k] = colunas[k] ?? "";
+            }
+
+            try
+            {
+                Fase fase = new Fase();
+                fase.id = LerInt(colunas, indices, "id");
+                fase.tipo = LerTexto(colunas, indices, "tipo");
+                fase.palavraDebug = LerTexto(colunas, indices, "palavradebug"); // note lowercase
+                fase.imagem = LerTexto(colunas, indices, "imagem");
+                fase.video = LerTexto(colunas, indices, "video");
+                fase.pares = LerTexto(colunas, indices, "pares"); // aqui pode conter ';' internamente
+
+                fases.Add(fase);
+
+                // log para depuração
+                string previewPares = fase.pares != null && fase.pares.Length > 60 ? fase.pares.Substring(0, 60) + "..." : fase.pares;
+                Debug.Log($"Linha {i + 1} lida -> id:{fase.id} tipo:{fase.tipo} palavraDebug:{fase.palavraDebug} paresPreview:{previewPares}");
+
+                contador++;
+            }
+            catch (Exception e)
+            {
+                Debug.LogWarning($"⚠️ Erro ao ler linha {i + 1}: {e.Message}");
+            }
+        }
+
+        Debug.Log($"✅ {contador} fases carregadas com sucesso do CSV!");
+    }
+
+    private string LerTexto(string[] colunas, Dictionary<string, int> indices, string nome)
+    {
+        nome = nome.ToLower();
+        if (!indices.ContainsKey(nome)) return null;
+
+        int idx = indices[nome];
+        if (idx < 0 || idx >= colunas.Length) return null;
+
+        string valor = colunas[idx]?.Trim().Trim('"');
+        return string.IsNullOrEmpty(valor) ? null : valor;
+    }
+
+    private int LerInt(string[] colunas, Dictionary<string, int> indices, string nome)
+    {
+        string valor = LerTexto(colunas, indices, nome);
+        if (int.TryParse(valor, out int resultado))
+            return resultado;
+        return 0;
     }
 
     public void SelecionarFase(int id)
@@ -59,22 +128,37 @@ public class GameManager : MonoBehaviour
 
         if (faseAtual == null)
         {
-            Debug.LogError($"Fase com ID {id} n�o encontrada!");
+            Debug.LogError($"❌ Fase com ID {id} não encontrada!");
             return;
         }
 
-        Debug.Log($"Selecionando fase {faseAtual.id}: {faseAtual.tipo}");
-
-        switch (faseAtual.tipo)
+        if (string.IsNullOrEmpty(faseAtual.tipo))
         {
-            case "Memoria":
-                SceneManager.LoadScene("JogoDaMemoria");
+            Debug.LogError($"⚠️ Fase {id} tem tipo nulo ou vazio!");
+            return;
+        }
+
+        Debug.Log($"▶️ Selecionando fase {faseAtual.id}: tipo {faseAtual.tipo}, palavraDebug = {faseAtual.palavraDebug}");
+
+        switch (faseAtual.tipo.ToLower())
+        {
+            case "memoria":
+            case "memória": // só por segurança com acento
+                SceneManager.LoadScene("Jogo_Memoria");
                 break;
-            case "Forca":
+
+            case "forca":
+            case "força":
                 SceneManager.LoadScene("JogoDaForca");
                 break;
+
+            case "quebra cabeca":
+            case "quebra-cabeca":
+                SceneManager.LoadScene("JogoQuebraCabeca");
+                break;
+
             default:
-                Debug.LogError($"Tipo de fase desconhecido: {faseAtual.tipo}");
+                Debug.LogError($"⚠️ Tipo de fase desconhecido: {faseAtual.tipo}");
                 break;
         }
     }
