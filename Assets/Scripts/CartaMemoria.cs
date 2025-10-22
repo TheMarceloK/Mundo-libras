@@ -9,7 +9,7 @@ public class CartaMemoria : MonoBehaviour
     [HideInInspector] public string imagemNome;
     [HideInInspector] public string videoNome;
     [HideInInspector] public bool revelada;
-    [HideInInspector] public int idPar;
+     public int idPar;
 
     private MinigameMemoria gerenciador;
 

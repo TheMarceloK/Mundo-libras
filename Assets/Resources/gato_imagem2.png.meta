@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 4c2e8cfa7fb1f0a4a8f2dc6d9c51f9be
+guid: 49a574ae997b51747903547cb2c75961
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2496040466669729985
-    second: download (2)_0
+      213: -2525257529036466623
+    second: camaImg_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -24,7 +24,7 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
     flipGreenChannel: 0
-  isReadable: 0
+  isReadable: 1
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
@@ -126,23 +126,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: download (2)_0
+      name: camaImg_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 275
-        height: 183
+        y: 122
+        width: 1000
+        height: 763
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f37862f8b684c5dd0800000000000000
-      internalID: -2496040466669729985
+      spriteID: 146966f18ab74fcd0800000000000000
+      internalID: -2525257529036466623
       vertices: []
       indices: 
       edges: []
@@ -151,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: d1f3477277106564b95775aae8ac890b
     internalID: 0
     vertices: []
     indices: 
@@ -159,9 +159,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      download (2)_0: -2496040466669729985
+      camaImg_0: -2525257529036466623
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

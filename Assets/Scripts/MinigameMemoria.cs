@@ -8,6 +8,8 @@ public class MinigameMemoria : MonoBehaviour
     public Transform gridParent;
     public GameObject cartaPrefab;
     public VideoPlayer videoPlayer;
+    public RawImage rawImage;
+    public GameObject EndPanel;
 
     private List<CartaMemoria> cartas = new List<CartaMemoria>();
     private CartaMemoria primeiraCarta;
@@ -23,12 +25,11 @@ public class MinigameMemoria : MonoBehaviour
             Debug.LogError("Nenhuma fase carregada!");
             return;
         }
-
         Debug.Log($"Iniciando fase de memória: {fase.palavraDebug}");
 
         string[] pares = fase.pares.Split(';');
         int idParAtual = 0;
-
+        Debug.Log("Teste " + pares);
         foreach (string p in pares)
         {
             if (string.IsNullOrWhiteSpace(p)) continue;
@@ -97,10 +98,14 @@ public class MinigameMemoria : MonoBehaviour
         {
             // Par correto
             VideoClip clip = Resources.Load<VideoClip>(primeiraCarta.videoNome);
+            Debug.Log(clip);
             if (clip != null && videoPlayer != null)
             {
+                rawImage.gameObject.SetActive(true);
                 videoPlayer.clip = clip;
                 videoPlayer.Play();
+
+                bloqueioClique = true;
             }
 
             primeiraCarta.Desativar();
@@ -114,10 +119,21 @@ public class MinigameMemoria : MonoBehaviour
         {
             primeiraCarta.VirarParaBaixo();
             segundaCarta.VirarParaBaixo();
+
+            bloqueioClique = false;
         }
 
         primeiraCarta = null;
         segundaCarta = null;
+    }
+    public void DesativarVideo()
+    {
         bloqueioClique = false;
+        rawImage.gameObject.SetActive(false);
+        videoPlayer.Stop();
+        if (paresRestantes <= 0)
+            EndPanel.SetActive(true);
+
+        
     }
 }
