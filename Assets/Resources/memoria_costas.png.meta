@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7c17b976b73152347adbe7839492e31b
+guid: 508059867f55f7e4389ef0e3da0bdb66
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4088519381011950912
-    second: Fundo Uno_0
+      213: 6143731726603372277
+    second: carta_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fundo Uno_0
+      name: carta_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1131
-        height: 1600
+        width: 297
+        height: 297
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 04d648217b65db830800000000000000
-      internalID: 4088519381011950912
+      spriteID: 5f6cd77547be24550800000000000000
+      internalID: 6143731726603372277
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Fundo Uno_0: 4088519381011950912
+      carta_0: 6143731726603372277
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
