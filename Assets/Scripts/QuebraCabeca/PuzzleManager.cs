@@ -68,7 +68,7 @@ public class PuzzleManager : MonoBehaviour
                 int texWidth = fullImage.width / columns;
                 int texHeight = fullImage.height / rows;
 
-                
+
                 int yPixel = fullImage.height - (row + 1) * texHeight;
 
                 Texture2D pieceTexture = new Texture2D(texWidth, texHeight, TextureFormat.RGBA32, false);
@@ -173,10 +173,4 @@ public class PuzzleManager : MonoBehaviour
             //}
         }
     }
-<<<<<<< Updated upstream
 }
-=======
-
-
-}
->>>>>>> Stashed changes

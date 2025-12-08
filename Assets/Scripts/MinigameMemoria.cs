@@ -2,6 +2,7 @@
 using UnityEngine.UI;
 using UnityEngine.Video;
 using System.Collections.Generic;
+using System.Linq;
 
 public class MinigameMemoria : MonoBehaviour
 {
@@ -29,7 +30,7 @@ public class MinigameMemoria : MonoBehaviour
 
         string[] pares = fase.pares.Split(';');
         int idParAtual = 0;
-        Debug.Log("Teste " + pares);
+        Debug.Log("Teste " + pares.Count());
         foreach (string p in pares)
         {
             if (string.IsNullOrWhiteSpace(p)) continue;
@@ -85,7 +86,7 @@ public class MinigameMemoria : MonoBehaviour
         else if (segundaCarta == null)
         {
             segundaCarta = carta;
-            bloqueioClique = true;
+           // bloqueioClique = true;
             StartCoroutine(VerificarPar());
         }
     }
@@ -97,16 +98,16 @@ public class MinigameMemoria : MonoBehaviour
         if (primeiraCarta.idPar == segundaCarta.idPar)
         {
             // Par correto
-            VideoClip clip = Resources.Load<VideoClip>(primeiraCarta.videoNome);
-            Debug.Log(clip);
-            if (clip != null && videoPlayer != null)
-            {
-                rawImage.gameObject.SetActive(true);
-                videoPlayer.clip = clip;
-                videoPlayer.Play();
+            //VideoClip clip = Resources.Load<VideoClip>(primeiraCarta.videoNome);
+           // Debug.Log(clip);
+          //  if (clip != null && videoPlayer != null)
+          //  {
+          //      rawImage.gameObject.SetActive(true);
+          //      videoPlayer.clip = clip;
+          //      videoPlayer.Play();
 
-                bloqueioClique = true;
-            }
+           //     bloqueioClique = true;
+          //  }
 
             primeiraCarta.Desativar();
             segundaCarta.Desativar();

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 49a574ae997b51747903547cb2c75961
+guid: 7e7a699395ba88d41856a827adcb2ec5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2525257529036466623
-    second: camaImg_0
+      213: 7567965131508744721
+    second: "Imagem do WhatsApp de 2025-12-08 \xE0(s) 14.17.35_5b4bec0d_0"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -24,7 +24,7 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
     flipGreenChannel: 0
-  isReadable: 1
+  isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
@@ -126,23 +126,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: camaImg_0
+      name: "Imagem do WhatsApp de 2025-12-08 \xE0(s) 14.17.35_5b4bec0d_0"
       rect:
         serializedVersion: 2
         x: 0
-        y: 122
-        width: 1000
-        height: 763
+        y: 0
+        width: 1280
+        height: 807
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 146966f18ab74fcd0800000000000000
-      internalID: -2525257529036466623
+      spriteID: 1120f18b030d60960800000000000000
+      internalID: 7567965131508744721
       vertices: []
       indices: 
       edges: []
@@ -151,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: d1f3477277106564b95775aae8ac890b
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -159,11 +159,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      camaImg_0: -2525257529036466623
+      "Imagem do WhatsApp de 2025-12-08 \xE0(s) 14.17.35_5b4bec0d_0": 7567965131508744721
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

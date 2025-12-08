@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 4d5d7df6380d974448ac35aa7f846258
+guid: c2a4307d8acb1104abeeb24533caa91d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2496040466669729985
-    second: download (2)_0
+      213: 2292989029291361956
+    second: cheerful-brown-cartoon-monkey-big-600nw-2644350133_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: download (2)_0
+      name: cheerful-brown-cartoon-monkey-big-600nw-2644350133_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 275
-        height: 183
+        width: 600
+        height: 600
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f37862f8b684c5dd0800000000000000
-      internalID: -2496040466669729985
+      spriteID: 4a687c49f5552df10800000000000000
+      internalID: 2292989029291361956
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      download (2)_0: -2496040466669729985
+      cheerful-brown-cartoon-monkey-big-600nw-2644350133_0: 2292989029291361956
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
