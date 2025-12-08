@@ -137,4 +137,8 @@ public class MinigameMemoria : MonoBehaviour
 
         
     }
+    public void VoltarMenu()
+    {
+        GameManager.instancia.MudarCena("Menu");
+    }
 }

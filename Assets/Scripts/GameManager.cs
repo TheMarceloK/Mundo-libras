@@ -2,6 +2,7 @@
 using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 using System;
+using UnityEngine.Rendering;
 
 public class GameManager : MonoBehaviour
 {
@@ -144,22 +145,27 @@ public class GameManager : MonoBehaviour
         {
             case "memoria":
             case "memória": // só por segurança com acento
-                SceneManager.LoadScene("Jogo_Memoria");
+                MudarCena("Jogo_Memoria");
                 break;
 
             case "forca":
             case "força":
-                SceneManager.LoadScene("JogoDaForca");
+                MudarCena("JogoDaForca");
                 break;
 
             case "quebra cabeca":
             case "quebra-cabeca":
-                SceneManager.LoadScene("JogoQuebraCabeca");
+                MudarCena("JogoQuebraCabeca");
                 break;
 
             default:
                 Debug.LogError($"⚠️ Tipo de fase desconhecido: {faseAtual.tipo}");
                 break;
         }
+    }
+
+    public void MudarCena(string CenaString)
+    {
+        SceneManager.LoadScene(CenaString);
     }
 }
