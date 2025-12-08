@@ -22,8 +22,8 @@ public class PuzzleManager : MonoBehaviour
     [Header("Snap")]
     public float snapDistance = 60f;
 
-    [Header("Identificação da Fase")]
-    public string faseNome;
+    //[Header("Identificação da Fase")]
+    //public string faseNome;
 
     [Header("UI de Fim de Fase")]
     public GameObject endPanel;
