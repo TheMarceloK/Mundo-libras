@@ -17,13 +17,16 @@ public class PuzzleManager : MonoBehaviour
     [Header("Configuração do Quebra-Cabeça")]
     public int rows = 2;
     public int columns = 4;
-    public float pieceSpacing = 5f;      // espaço entre peças em pixels
+    public float pieceSpacing = 5f;
 
     [Header("Snap")]
-    public float snapDistance = 50f;     // distância para encaixar
+    public float snapDistance = 60f;
+
+    [Header("Identificação da Fase")]
+    public string faseNome;
 
     [Header("UI de Fim de Fase")]
-    public GameObject endPanel; // painel que aparece ao concluir (desativado no início)
+    public GameObject endPanel;
 
     private List<RectTransform> pieces = new List<RectTransform>();
 
@@ -36,9 +39,6 @@ public class PuzzleManager : MonoBehaviour
             Debug.LogWarning("PuzzleManager: fullImage / piecePrefab / puzzleArea não configurados no Inspector.");
     }
 
-    /// <summary>
-    /// Gera as peças e as posiciona (com tamanho proporcional ao puzzleArea).
-    /// </summary>
     public void GeneratePuzzle()
     {
         ClearPieces();
@@ -68,7 +68,7 @@ public class PuzzleManager : MonoBehaviour
                 int texWidth = fullImage.width / columns;
                 int texHeight = fullImage.height / rows;
 
-                // <-- CORREÇÃO AQUI: y invertido para que row=0 seja topo
+                
                 int yPixel = fullImage.height - (row + 1) * texHeight;
 
                 Texture2D pieceTexture = new Texture2D(texWidth, texHeight, TextureFormat.RGBA32, false);
@@ -88,7 +88,6 @@ public class PuzzleManager : MonoBehaviour
                 RawImage ri = pieceObj.GetComponent<RawImage>();
                 if (ri != null) ri.texture = pieceTexture;
 
-                // cria slot alvo
                 GameObject slot = new GameObject($"Slot_{row}_{col}", typeof(RectTransform));
                 slot.transform.SetParent(slotParent.transform, false);
                 RectTransform slotRT = slot.GetComponent<RectTransform>();
@@ -102,7 +101,6 @@ public class PuzzleManager : MonoBehaviour
                 );
                 slotRT.anchoredPosition = correctPos;
 
-                // configura piece script
                 PuzzlePiece pp = pieceObj.GetComponent<PuzzlePiece>();
                 pp.manager = this;
                 pp.targetSlot = slotRT;
@@ -142,7 +140,6 @@ public class PuzzleManager : MonoBehaviour
 
     private void ClearPieces()
     {
-        // destrói apenas filhos do puzzleArea (presumindo que só existam peças)
         foreach (Transform t in puzzleArea)
         {
             Destroy(t.gameObject);
@@ -150,28 +147,36 @@ public class PuzzleManager : MonoBehaviour
         pieces.Clear();
     }
 
-    /// <summary>
-    /// Chamado por PuzzlePiece quando é encaixada.
-    /// Verifica se todas as peças estão marcadas como isPlaced.
-    /// </summary>
     public void NotifyPiecePlaced(PuzzlePiece piece)
     {
-        // rápida checagem: se alguma peça ainda não está colocada, sair
         foreach (Transform t in puzzleArea)
         {
             PuzzlePiece p = t.GetComponent<PuzzlePiece>();
             if (p != null && !p.GetIsPlaced()) return;
         }
 
-        // todas colocadas -> finaliza
         OnAllPiecesPlaced();
     }
 
     private void OnAllPiecesPlaced()
     {
         Debug.Log("Puzzle completo!");
+
         if (endPanel != null)
+        {
             endPanel.SetActive(true);
-        // aqui você pode também disparar o vídeo, som, animação etc.
+
+            //VideoUI videoUI = endPanel.GetComponent<VideoUI>();
+            //if (videoUI != null)
+            //{
+            //    videoUI.LoadAndPlayVideo(faseNome);
+            //}
+        }
     }
+<<<<<<< Updated upstream
 }
+=======
+
+
+}
+>>>>>>> Stashed changes

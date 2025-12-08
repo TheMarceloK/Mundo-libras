@@ -1,11 +1,6 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-/// <summary>
-/// PuzzlePiece (com sistema de snap por proximidade de slot)
-/// Detecta o centro da peça ou o ponteiro passando pelo ponto alvo (slot)
-/// e fixa imediatamente, mesmo durante o arraste.
-/// </summary>
 [RequireComponent(typeof(RectTransform))]
 [RequireComponent(typeof(CanvasGroup))]
 public class PuzzlePiece : MonoBehaviour, IPointerDownHandler, IDragHandler, IPointerUpHandler
@@ -117,14 +112,14 @@ public class PuzzlePiece : MonoBehaviour, IPointerDownHandler, IDragHandler, IPo
         // Coloca a peça atrás das outras (para não cobrir as soltas)
         rt.SetAsFirstSibling();
 
-        // ?? Toca som de encaixe
         if (AudioManager.Instance != null)
             AudioManager.Instance.PlaySnapSound();
 
+
         // Vibra no mobile
-        #if UNITY_ANDROID
+#if UNITY_ANDROID
             Handheld.Vibrate();
-        #endif
+#endif
 
         // Anima suavemente o encaixe
         StartCoroutine(SmoothSnapCoroutine(targetSlot.anchoredPosition, 0.15f));
