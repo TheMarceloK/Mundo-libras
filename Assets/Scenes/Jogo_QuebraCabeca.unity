@@ -164,14 +164,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad5fd1ff78e8ceb458f4e3ca43169cf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PuzzleManager
-  fullImage: {fileID: 2800000, guid: dade309e81fe471488393ded67be3173, type: 3}
+  fullImage: {fileID: 2800000, guid: 9b7a0a9409186b14b8f9c86ef755cd38, type: 3}
   piecePrefab: {fileID: 2277677442450642335, guid: cd20b434f0d34cd4cb7d7bd4e274fc79, type: 3}
   puzzleArea: {fileID: 204398025}
   rows: 2
   columns: 4
   pieceSpacing: 5
   snapDistance: 60
-  faseNome: cama
+  faseNome: carta
   endPanel: {fileID: 1316337628}
 --- !u!114 &16718407
 MonoBehaviour:
@@ -186,7 +186,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VideoController
   videoPlayer: {fileID: 1813374921}
-  puzzleSceneName: Jogo_QuebraCabeca
+  puzzleSceneName: Menu
 --- !u!1 &33099411
 GameObject:
   m_ObjectHideFlags: 0

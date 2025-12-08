@@ -6,11 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: ccfe7931ade3f2f458ebddd79b29e1a7
+  - enabled: 0
     path: Assets/Scenes/SelecionarLevel.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Jogo_Memoria.unity
     guid: f45275cab7361124f9348a4963d6705b
+  - enabled: 1
+    path: Assets/Scenes/Jogo_QuebraCabeca.unity
+    guid: 713c6101ce9e07641aeb3c6c2afdd593
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

@@ -10,7 +10,7 @@ public class VideoController : MonoBehaviour
 
     [Header("Configuração de Cena")]
     // Nome da cena do quebra-cabeça para onde você voltará
-    [SerializeField] private string puzzleSceneName = "NomeDaSuaCenaDoQuebraCabeca";
+    [SerializeField] private string puzzleSceneName = "Menu";
 
     void Start()
     {
