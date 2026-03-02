@@ -1,18 +1,23 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class FaseSelector : MonoBehaviour
 {
-    [SerializeField] private string fase1 = "Jogo_QuebraCabeca";
-    [SerializeField] private string fase2 = "Jogo_Memoria";
+    [Header("Lista de Fases")]
+    [Tooltip("Adicione os nomes das cenas aqui (ex: Jogo_QuebraCabeca, Jogo_Memoria)")]
+    [SerializeField] private List<string> fases = new List<string>();
 
-    public void Fase1()
+    // Função para ser chamada no botão da UI
+    public void CarregarFasePorIndice(int index)
     {
-        SceneManager.LoadScene(fase1);
-    }
-
-    public void Fase2()
-    {
-        SceneManager.LoadScene(fase2);
+        if (index >= 0 && index < fases.Count)
+        {
+            SceneManager.LoadScene(fases[index]);
+        }
+        else
+        {
+            Debug.LogError($"Erro: Tentou carregar o índice {index}, mas a lista só vai de 0 a {fases.Count - 1}.");
+        }
     }
 }

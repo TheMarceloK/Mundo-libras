@@ -25,6 +25,7 @@ public class BingoManager : MonoBehaviour
     public RawImage telaDoVideo;         // Onde o vídeo é renderizado na UI
     public Image[] botoesOpcoes;         // Os 4 botões de resposta (Imagens)
     public TextMeshProUGUI textoPontuacao; // Texto para mostrar "Acertos: X"
+    public TextMeshProUGUI textoFinal;
     public GameObject painelFimDeJogo;   // Painel para ativar quando acabar
 
     // --- VARIÁVEIS DE CONTROLE ---
@@ -116,7 +117,6 @@ public class BingoManager : MonoBehaviour
 
         if (itemEscolhido == itemAtual)
         {
-            // Acertou!
             Debug.Log("Acertou!");
             pontuacao++;
             AtualizarTextoPontuacao();
@@ -124,7 +124,6 @@ public class BingoManager : MonoBehaviour
         }
         else
         {
-            // Errou!
             Debug.Log("Errou! Era: " + itemAtual.nome);
             // Aqui você pode tocar um som de erro
         }
@@ -142,10 +141,9 @@ public class BingoManager : MonoBehaviour
 
     void FimDeJogo()
     {
-        Debug.Log("Jogo Finalizado! Pontuação Final: " + pontuacao);
         videoPlayer.Stop();
         painelFimDeJogo.SetActive(true);
-        // Aqui você pode mostrar estrelas, botão de reiniciar, etc.
+        textoFinal.text = "Sua Pontuação: " + pontuacao + " / " + totalRodadas;
     }
 
     // Algoritmo de Fisher-Yates para embaralhar listas (Eficiente)
