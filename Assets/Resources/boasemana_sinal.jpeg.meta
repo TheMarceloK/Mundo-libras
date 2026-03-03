@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: edde5bdd1c891d941b4246e2cba11d04
+guid: 93db5f1fdafe7b8469bc9bd3417983ff
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4088519381011950912
-    second: Fundo Uno_0
+      213: -7598821246479236951
+    second: boasemana_sinal_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,43 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fundo Uno_0
+      name: boasemana_sinal_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1131
-        height: 1600
+        width: 207
+        height: 79
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 04d648217b65db830800000000000000
-      internalID: 4088519381011950912
+      spriteID: 9a00aeb26509b8690800000000000000
+      internalID: -7598821246479236951
       vertices: []
       indices: 
       edges: []
@@ -161,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Fundo Uno_0: 4088519381011950912
+      boasemana_sinal_0: -7598821246479236951
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

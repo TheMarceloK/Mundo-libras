@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: fcd864e7415cd89448be3ad344b7356b
+guid: 3f988e4bb1339b5498c9ad802ce9656e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7139849577753286379
-    second: cachorro_0
+      213: -8070972397200471283
+    second: oi_sinal_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -24,7 +24,7 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
     flipGreenChannel: 0
-  isReadable: 1
+  isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
@@ -96,30 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cachorro_0
+      name: oi_sinal_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 858
-        height: 932
+        width: 175
+        height: 77
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: be615b7cc57d51360800000000000000
-      internalID: 7139849577753286379
+      spriteID: d0b02e8dd552eff80800000000000000
+      internalID: -8070972397200471283
       vertices: []
       indices: 
       edges: []
@@ -148,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      cachorro_0: 7139849577753286379
+      oi_sinal_0: -8070972397200471283
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

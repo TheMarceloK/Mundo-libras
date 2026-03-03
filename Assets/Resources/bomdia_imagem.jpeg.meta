@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 324b155c80545444ea83c6ecae773f08
+guid: f0f84040de3ce2d468d46793c7c8f723
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7603191538271706256
-    second: macaco_0
+      213: -6042052099247626856
+    second: bomdia_imagem_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,43 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: macaco_0
+      name: bomdia_imagem_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 758
-        height: 425
+        width: 170
+        height: 70
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 09cd0fdab66f38960800000000000000
-      internalID: 7603191538271706256
+      spriteID: 89521fdb0a1562ca0800000000000000
+      internalID: -6042052099247626856
       vertices: []
       indices: 
       edges: []
@@ -161,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      macaco_0: 7603191538271706256
+      bomdia_imagem_0: -6042052099247626856
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

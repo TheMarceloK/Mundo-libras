@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: cb59312dfb0bb634388661c33f7e056e
+guid: b0cbdd461ec5fca45a7303e78901d7d3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1628134788780967833
-    second: leao_0
+      213: -7510380242262830606
+    second: bemvindo_imagem_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,43 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: leao_0
+      name: bemvindo_imagem_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 761
-        height: 426
+        width: 257
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 768314c2904b769e0800000000000000
-      internalID: -1628134788780967833
+      spriteID: 2f1dfcb16f4c5c790800000000000000
+      internalID: -7510380242262830606
       vertices: []
       indices: 
       edges: []
@@ -161,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      leao_0: -1628134788780967833
+      bemvindo_imagem_0: -7510380242262830606
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
