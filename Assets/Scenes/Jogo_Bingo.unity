@@ -1564,19 +1564,43 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BingoManager
   listaDeConteudo:
+  - nome: "Le\xE3o"
+    video: {fileID: 32900000, guid: 48f1c5caec509394c9249407ffcb33b3, type: 3}
+    imagem: {fileID: 7567965131508744721, guid: 7e7a699395ba88d41856a827adcb2ec5, type: 3}
+  - nome: Macaco
+    video: {fileID: 32900000, guid: 1fb6118b9d6e9da43a3abbc12f3e214f, type: 3}
+    imagem: {fileID: 2292989029291361956, guid: c2a4307d8acb1104abeeb24533caa91d, type: 3}
   - nome: Oi
     video: {fileID: 32900000, guid: c8980a4749b37144b9c9c3bc4d2ac7d9, type: 3}
     imagem: {fileID: -6104331486087533166, guid: 22128750ff3569546ab04d7ebb8fa999, type: 3}
-  - nome: "Le\xE3o"
-    video: {fileID: 32900000, guid: 51def96c9e1a0fa42a2d546392c56d47, type: 3}
-    imagem: {fileID: 7567965131508744721, guid: 7e7a699395ba88d41856a827adcb2ec5, type: 3}
-  - nome: Macaco
-    video: {fileID: 32900000, guid: 48f1c5caec509394c9249407ffcb33b3, type: 3}
-    imagem: {fileID: 2292989029291361956, guid: c2a4307d8acb1104abeeb24533caa91d, type: 3}
   - nome: Bom Dia
     video: {fileID: 32900000, guid: 2a27241990413084ea4c0ad5f760a288, type: 3}
     imagem: {fileID: -2520400793060512491, guid: 3369a2a676a11794da1c3a0681210a30, type: 3}
-  totalRodadas: 4
+  - nome: Boa Tarde
+    video: {fileID: 32900000, guid: 017b190b1924b4743b195c8f1b7119e9, type: 3}
+    imagem: {fileID: 7142521383738641784, guid: 37337c50675965a499c036844853b6c7, type: 3}
+  - nome: Boa Noite
+    video: {fileID: 32900000, guid: 62267545865e195459c0a3f0c79dabbb, type: 3}
+    imagem: {fileID: 8985754293953263063, guid: a173a08843b4854488fa496a28111d57, type: 3}
+  - nome: Tudo Bem?
+    video: {fileID: 32900000, guid: bad06fcca8f2c624abe26b720b9a4679, type: 3}
+    imagem: {fileID: 1112364393927609161, guid: 953caf76a58eb464986b6e30f7439bb0, type: 3}
+  - nome: Como voce esta?
+    video: {fileID: 32900000, guid: 706585fd72ba1da4084774786f4cf13d, type: 3}
+    imagem: {fileID: -2450204624661881184, guid: 7a1ac5d300609bc408a8a743269ec1b0, type: 3}
+  - nome: Saudade
+    video: {fileID: 32900000, guid: 14a0bc0dd3a30d447bdc7d79b1edba60, type: 3}
+    imagem: {fileID: 8179630143609548728, guid: 60f41224a224f1d45af528555f5798b7, type: 3}
+  - nome: Bem vindo
+    video: {fileID: 32900000, guid: 5a20dc48d3b41ea478a51b3a6ae2bdaa, type: 3}
+    imagem: {fileID: -7510380242262830606, guid: b0cbdd461ec5fca45a7303e78901d7d3, type: 3}
+  - nome: Boa semana
+    video: {fileID: 32900000, guid: 91f5228e187e47844b4727dae6d306c0, type: 3}
+    imagem: {fileID: -3709810782238306686, guid: 21eed50bbcfe16045825a9182300ad1a, type: 3}
+  - nome: Bom trabalho
+    video: {fileID: 32900000, guid: 3952c2ad27bac32438d7ae77d358d9b5, type: 3}
+    imagem: {fileID: -6813402622353932204, guid: 7401114ca3e28224783f675ad92505db, type: 3}
+  totalRodadas: 10
   videoPlayer: {fileID: 1206718486}
   telaDoVideo: {fileID: 2003568369}
   botoesOpcoes:
@@ -1779,7 +1803,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1357252722}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &1357252724
 Camera:
   m_ObjectHideFlags: 0
@@ -1789,8 +1813,8 @@ Camera:
   m_GameObject: {fileID: 1357252722}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.4552332, g: 0.50115365, b: 0.6226415, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
