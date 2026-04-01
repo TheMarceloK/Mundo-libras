@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a744d676989b297428c6f05e3d8e7a52, type: 3}
+  m_Name: Par2
+  m_EditorClassIdentifier: Assembly-CSharp::CardPairData
+  pairID: 2
+  librasSprite: {fileID: -4294882458585554274, guid: a5f5f99573fd43840a05aed8ba7c538f, type: 3}
+  caricatureSprite: {fileID: 1112364393927609161, guid: 953caf76a58eb464986b6e30f7439bb0, type: 3}
+  rewardVideo: {fileID: 32900000, guid: bad06fcca8f2c624abe26b720b9a4679, type: 3}

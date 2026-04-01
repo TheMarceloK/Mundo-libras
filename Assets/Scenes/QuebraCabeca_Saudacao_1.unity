@@ -185,7 +185,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VideoController
   videoPlayer: {fileID: 1813374921}
-  puzzleSceneName: Menu
+  puzzleSceneName: Menu_Selecao
 --- !u!1 &33099411
 GameObject:
   m_ObjectHideFlags: 0

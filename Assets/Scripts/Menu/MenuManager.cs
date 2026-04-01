@@ -5,19 +5,12 @@ public class MenuManager : MonoBehaviour
 {
     [Header("Configuração de Cena")]
     [SerializeField] private GameObject panelMenu;
-    [SerializeField] private GameObject panelFases;
+    [SerializeField] private GameObject SceneSelecao;
     [SerializeField] private GameObject panelCreditos;
-
-    public void btnJogar()
-    {
-        panelMenu.SetActive(false);
-        panelFases.SetActive(true);
-    }
 
     public void btnVoltarMissoes()
     {
-        panelMenu.SetActive(true);
-        panelFases.SetActive(false);
+        SceneManager.LoadScene("Menu");
     }
 
     public void btnCreditos()
