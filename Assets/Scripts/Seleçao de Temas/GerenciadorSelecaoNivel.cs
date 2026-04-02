@@ -30,10 +30,12 @@ public class GerenciadorSelecaoNivel : MonoBehaviour
         {
             textoNomeDoTema.text = "Tema: Saudação";
         }
-
+        else
+        {
+            textoNomeDoTema.text = "Tema: " + temaSelecionado;
+        }
         // Salva o tema escolhido globalmente para as cenas dos minigames saberem o que carregar
         PlayerPrefs.SetString("TemaAtual", temaSelecionado);
-
         AtualizarProgresso();
         painelSubniveis.SetActive(true);
     }
