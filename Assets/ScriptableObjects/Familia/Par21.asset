@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Par21
   m_EditorClassIdentifier: Assembly-CSharp::CardPairData
   pairID: 21
-  librasSprite: {fileID: 7704589455734250460, guid: b595002e97ca6da48a85333f82fed428, type: 3}
-  caricatureSprite: {fileID: 5794171146999611397, guid: cb0394fdfc85a924da2f84c917824512, type: 3}
-  rewardVideo: {fileID: 32900000, guid: f6669b3a21bd4554e9836c846d0c03c8, type: 3}
+  librasSprite: {fileID: 3799905158331597592, guid: 9ab7b8615af73b94dbb19ac7c77582c9, type: 3}
+  caricatureSprite: {fileID: 8586109415874112453, guid: 21bd10e831cc21c42bed8943c11b2e83, type: 3}
+  rewardVideo: {fileID: 32900000, guid: 175c912bfb37366408238d04cc79c249, type: 3}

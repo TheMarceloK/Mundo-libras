@@ -1564,36 +1564,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BingoManager
   listaDeConteudo:
-  - nome: Oi
-    video: {fileID: 32900000, guid: c8980a4749b37144b9c9c3bc4d2ac7d9, type: 3}
-    imagem: {fileID: -6104331486087533166, guid: 22128750ff3569546ab04d7ebb8fa999, type: 3}
-  - nome: Bom Dia
-    video: {fileID: 32900000, guid: 2a27241990413084ea4c0ad5f760a288, type: 3}
-    imagem: {fileID: -2520400793060512491, guid: 3369a2a676a11794da1c3a0681210a30, type: 3}
-  - nome: Boa Tarde
-    video: {fileID: 32900000, guid: 017b190b1924b4743b195c8f1b7119e9, type: 3}
-    imagem: {fileID: 7142521383738641784, guid: 37337c50675965a499c036844853b6c7, type: 3}
-  - nome: Boa Noite
-    video: {fileID: 32900000, guid: 62267545865e195459c0a3f0c79dabbb, type: 3}
-    imagem: {fileID: 8985754293953263063, guid: a173a08843b4854488fa496a28111d57, type: 3}
-  - nome: Tudo Bem?
-    video: {fileID: 32900000, guid: bad06fcca8f2c624abe26b720b9a4679, type: 3}
-    imagem: {fileID: 1112364393927609161, guid: 953caf76a58eb464986b6e30f7439bb0, type: 3}
-  - nome: Como voce esta?
-    video: {fileID: 32900000, guid: 706585fd72ba1da4084774786f4cf13d, type: 3}
-    imagem: {fileID: -2450204624661881184, guid: 7a1ac5d300609bc408a8a743269ec1b0, type: 3}
-  - nome: Saudade
-    video: {fileID: 32900000, guid: 14a0bc0dd3a30d447bdc7d79b1edba60, type: 3}
-    imagem: {fileID: 8179630143609548728, guid: 60f41224a224f1d45af528555f5798b7, type: 3}
-  - nome: Bem vindo
-    video: {fileID: 32900000, guid: 5a20dc48d3b41ea478a51b3a6ae2bdaa, type: 3}
-    imagem: {fileID: -7510380242262830606, guid: b0cbdd461ec5fca45a7303e78901d7d3, type: 3}
-  - nome: Boa semana
-    video: {fileID: 32900000, guid: 91f5228e187e47844b4727dae6d306c0, type: 3}
-    imagem: {fileID: -3709810782238306686, guid: 21eed50bbcfe16045825a9182300ad1a, type: 3}
-  - nome: Bom trabalho
-    video: {fileID: 32900000, guid: 3952c2ad27bac32438d7ae77d358d9b5, type: 3}
-    imagem: {fileID: -6813402622353932204, guid: 7401114ca3e28224783f675ad92505db, type: 3}
+  - nome: Familia
+    video: {fileID: 32900000, guid: 7e659bb4c96042d45a3c9cc7a1c8ff4e, type: 3}
+    imagem: {fileID: 4982567031134482422, guid: 9b1876622117c7240b19e36550e2390a, type: 3}
+  - nome: Pai
+    video: {fileID: 32900000, guid: ea4d4b2212928834497eb09123cfe4ef, type: 3}
+    imagem: {fileID: -3699830270369611291, guid: e4271a93754526b4bba1d98e69b42a4b, type: 3}
+  - nome: Mae
+    video: {fileID: 32900000, guid: dfbaba5eccfb5be449fa772da0196cb4, type: 3}
+    imagem: {fileID: 4189438651543287629, guid: 25d5bb805392cdd4090af9468b6e9016, type: 3}
+  - nome: Filho
+    video: {fileID: 32900000, guid: 21ede58b09efb024888238948fe545fa, type: 3}
+    imagem: {fileID: 998837125173428796, guid: 655ecb4df6fbf154f85aa9f6096c6e2a, type: 3}
+  - nome: Filha
+    video: {fileID: 32900000, guid: e855909ba739298478e4ae089e2070c7, type: 3}
+    imagem: {fileID: -2354761394443084342, guid: 017f4cdbeb5ab8645849222391cb19d2, type: 3}
+  - nome: "Av\xF4"
+    video: {fileID: 32900000, guid: 175c912bfb37366408238d04cc79c249, type: 3}
+    imagem: {fileID: 8586109415874112453, guid: 21bd10e831cc21c42bed8943c11b2e83, type: 3}
+  - nome: "Av\xF3"
+    video: {fileID: 32900000, guid: 13ebbc31c410dac4297be14d015133ea, type: 3}
+    imagem: {fileID: 9058124149229397933, guid: d6707a6365ed15147aed7f885fb171e5, type: 3}
+  - nome: Tio
+    video: {fileID: 32900000, guid: 4ae3964a6e2b0f540b29e959e944c09e, type: 3}
+    imagem: {fileID: -2963922537845573762, guid: c13ceba0de504444bb56de7e98a6316a, type: 3}
+  - nome: Tia
+    video: {fileID: 32900000, guid: 9b7e2c6af256fc14aba3c853e66fc5a2, type: 3}
+    imagem: {fileID: 5946200008711014699, guid: 9589877dc3e1008429ac70eafff5b008, type: 3}
+  - nome: Primo
+    video: {fileID: 32900000, guid: 31c79b0825159c14f955c45c967aa9c0, type: 3}
+    imagem: {fileID: 1286114633877415010, guid: c60e997350c988244abbe132eb5221c1, type: 3}
   totalRodadas: 10
   videoPlayer: {fileID: 1206718486}
   telaDoVideo: {fileID: 2003568369}

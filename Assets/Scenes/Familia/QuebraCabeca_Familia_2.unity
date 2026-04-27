@@ -164,7 +164,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad5fd1ff78e8ceb458f4e3ca43169cf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PuzzleManager
-  fullImage: {fileID: 2800000, guid: f4eea1ae2dae18a44b9183bf6f49e72d, type: 3}
+  fullImage: {fileID: 2800000, guid: 9589877dc3e1008429ac70eafff5b008, type: 3}
   piecePrefab: {fileID: 2277677442450642335, guid: cd20b434f0d34cd4cb7d7bd4e274fc79, type: 3}
   puzzleArea: {fileID: 204398025}
   rows: 2
@@ -1556,7 +1556,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1813374917}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 2a27241990413084ea4c0ad5f760a288, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 9b7e2c6af256fc14aba3c853e66fc5a2, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
