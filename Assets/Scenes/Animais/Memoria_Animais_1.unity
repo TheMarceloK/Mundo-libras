@@ -1000,10 +1000,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MemoryGameManager
   levelPairs:
-  - {fileID: 11400000, guid: b3a600ff7fdc8734783aa4995bf06c11, type: 2}
-  - {fileID: 11400000, guid: a9f0ceaf578b8e940b6334d782e60e83, type: 2}
-  - {fileID: 11400000, guid: 7a96fa423ac3874438e09cd213eee1cd, type: 2}
-  - {fileID: 11400000, guid: 1bc27e25b8369284080dad7877180d0d, type: 2}
+  - {fileID: 11400000, guid: 811f8f486afe457498bf3d0084bb78f0, type: 2}
+  - {fileID: 11400000, guid: 96ca567e2f4148942899b5cb3b79a626, type: 2}
+  - {fileID: 11400000, guid: df71ffd899c77484b8cc190d11a6b1dd, type: 2}
+  - {fileID: 11400000, guid: bee0a3241df831647af23522802388e7, type: 2}
   cardBackSprite: {fileID: 6143731726603372277, guid: eb4a74b175507c5409ce1a0577d431f3, type: 3}
   nomeCenaSelecaoNiveis: Menu_Selecao
   cardPrefab: {fileID: 2348956842010374623, guid: 31a52ff3eeb6ca84a8c087d4dfcb7608, type: 3}

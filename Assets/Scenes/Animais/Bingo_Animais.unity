@@ -1564,36 +1564,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BingoManager
   listaDeConteudo:
-  - nome: Oi
-    video: {fileID: 32900000, guid: c8980a4749b37144b9c9c3bc4d2ac7d9, type: 3}
-    imagem: {fileID: -6104331486087533166, guid: 22128750ff3569546ab04d7ebb8fa999, type: 3}
-  - nome: Bom Dia
-    video: {fileID: 32900000, guid: 2a27241990413084ea4c0ad5f760a288, type: 3}
-    imagem: {fileID: -2520400793060512491, guid: 3369a2a676a11794da1c3a0681210a30, type: 3}
-  - nome: Boa Tarde
-    video: {fileID: 32900000, guid: 017b190b1924b4743b195c8f1b7119e9, type: 3}
-    imagem: {fileID: 7142521383738641784, guid: 37337c50675965a499c036844853b6c7, type: 3}
-  - nome: Boa Noite
-    video: {fileID: 32900000, guid: 62267545865e195459c0a3f0c79dabbb, type: 3}
-    imagem: {fileID: 8985754293953263063, guid: a173a08843b4854488fa496a28111d57, type: 3}
-  - nome: Tudo Bem?
-    video: {fileID: 32900000, guid: bad06fcca8f2c624abe26b720b9a4679, type: 3}
-    imagem: {fileID: 1112364393927609161, guid: 953caf76a58eb464986b6e30f7439bb0, type: 3}
-  - nome: Como voce esta?
-    video: {fileID: 32900000, guid: 706585fd72ba1da4084774786f4cf13d, type: 3}
-    imagem: {fileID: -2450204624661881184, guid: 7a1ac5d300609bc408a8a743269ec1b0, type: 3}
-  - nome: Saudade
-    video: {fileID: 32900000, guid: 14a0bc0dd3a30d447bdc7d79b1edba60, type: 3}
-    imagem: {fileID: 8179630143609548728, guid: 60f41224a224f1d45af528555f5798b7, type: 3}
-  - nome: Bem vindo
-    video: {fileID: 32900000, guid: 5a20dc48d3b41ea478a51b3a6ae2bdaa, type: 3}
-    imagem: {fileID: -7510380242262830606, guid: b0cbdd461ec5fca45a7303e78901d7d3, type: 3}
-  - nome: Boa semana
-    video: {fileID: 32900000, guid: 91f5228e187e47844b4727dae6d306c0, type: 3}
-    imagem: {fileID: -3709810782238306686, guid: 21eed50bbcfe16045825a9182300ad1a, type: 3}
-  - nome: Bom trabalho
-    video: {fileID: 32900000, guid: 3952c2ad27bac32438d7ae77d358d9b5, type: 3}
-    imagem: {fileID: -6813402622353932204, guid: 7401114ca3e28224783f675ad92505db, type: 3}
+  - nome: Cachorro
+    video: {fileID: 32900000, guid: c9827f5384e6a404797f463f6322226b, type: 3}
+    imagem: {fileID: 7139849577753286379, guid: 828ce73868960ee4aa45bc02b99ba06b, type: 3}
+  - nome: Gato
+    video: {fileID: 32900000, guid: a45341db361298f489ddb50154c8dd42, type: 3}
+    imagem: {fileID: -5155329453913746789, guid: c9ba3504ca0779540917cc76c5b00cc8, type: 3}
+  - nome: "P\xE1ssaro"
+    video: {fileID: 32900000, guid: 09aeedfbfd8a16c419bb36d5d925e8e2, type: 3}
+    imagem: {fileID: 6379744943899482686, guid: 6075f629f61058f40a01627c1ff2807c, type: 3}
+  - nome: Peixe
+    video: {fileID: 32900000, guid: c490d8e081a6d24488dca1af5f4be2b1, type: 3}
+    imagem: {fileID: -8346667246893509311, guid: 456facff33a4e4a46a0975f281310ef5, type: 3}
+  - nome: Cavalo
+    video: {fileID: 32900000, guid: f0df748346844594d9c382cca6e92565, type: 3}
+    imagem: {fileID: 9163883068720258240, guid: c87d016e267c22848a7930513636d510, type: 3}
+  - nome: Vaca
+    video: {fileID: 32900000, guid: bca4d0577da7fc64e8e3e6edfa4ea64e, type: 3}
+    imagem: {fileID: -5850107864648418528, guid: d88c42c6be95fa949b4223a743216d0f, type: 3}
+  - nome: Porco
+    video: {fileID: 32900000, guid: f00c10314acbff7459a68c76bf37e1ec, type: 3}
+    imagem: {fileID: -494401848588189954, guid: 8e1d38510f70c364bbdadf678840cf31, type: 3}
+  - nome: Coelho
+    video: {fileID: 32900000, guid: e35176bebe8c3344b83d27cdf7ad3c04, type: 3}
+    imagem: {fileID: 4923657074727427020, guid: c1ac6f21109669443b140ae6f9fc41b1, type: 3}
+  - nome: "Le\xE3o"
+    video: {fileID: 32900000, guid: 48f1c5caec509394c9249407ffcb33b3, type: 3}
+    imagem: {fileID: -1628134788780967833, guid: a1684d3d4a097e84694d396a7edae20a, type: 3}
+  - nome: Macaco
+    video: {fileID: 32900000, guid: fbfbc1eafe22d194ea98dae93e923354, type: 3}
+    imagem: {fileID: 7603191538271706256, guid: 5ca4694b25eea3c4fa7fc09f15fd4d0a, type: 3}
   totalRodadas: 10
   videoPlayer: {fileID: 1206718486}
   telaDoVideo: {fileID: 2003568369}
